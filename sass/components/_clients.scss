@@ -1,0 +1,101 @@
+.clients {
+  &__title {
+    font-size: 28px;
+    line-height: 1.17;
+    color: var(--black-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__block-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 210px;
+
+    border: 1px solid var(--icon-fill-color);
+    border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  &__item {
+    margin-bottom: 30px;
+  }
+  &__item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+
+  &__block-link:hover,
+  &__block-link:focus {
+    border: 1px solid var(--blue-color);
+  }
+}
+
+.icon-client1 {
+  width: 41px;
+  height: 47px;
+  fill: var(--icon-fill-color);
+}
+.icon-client2 {
+  width: 40px;
+  height: 52px;
+  fill: var(--icon-fill-color);
+}
+.icon-client3 {
+  width: 44px;
+  height: 42px;
+  fill: var(--icon-fill-color);
+}
+.icon-client4 {
+  width: 84px;
+  height: 40px;
+  fill: var(--icon-fill-color);
+}
+.icon-client5 {
+  width: 62px;
+  height: 45px;
+  fill: var(--icon-fill-color);
+}
+.icon-client6 {
+  width: 94px;
+  height: 44px;
+  fill: var(--icon-fill-color);
+}
+
+.icon-client1,
+.icon-client2,
+.icon-client3,
+.icon-client4,
+.icon-client5,
+.icon-client6 {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__block-link:hover .icon-client1,
+.clients__block-link:hover .icon-client2,
+.clients__block-link:hover .icon-client3,
+.clients__block-link:hover .icon-client4,
+.clients__block-link:hover .icon-client5,
+.clients__block-link:hover .icon-client6,
+.clients__block-link:focus .icon-client1,
+.clients__block-link:focus .icon-client2,
+.clients__block-link:focus .icon-client3,
+.clients__block-link:focus .icon-client4,
+.clients__block-link:focus .icon-client5,
+.clients__block-link:focus .icon-client6 {
+  fill: var(--blue-color);
+}

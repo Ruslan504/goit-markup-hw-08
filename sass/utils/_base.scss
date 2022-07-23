@@ -1,0 +1,48 @@
+body {
+  background-color: var(--white-color);
+  color: var(--body-text-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  margin-top: 0px; /* убрали внешние отступы у заголовка для верстки */
+  margin-bottom: 0px; /* убрали внешние отступы у заголовка для верстки */
+}
+ul {
+  padding: 0; /* убрали внешние и внутренние отступы у списков для верстки */
+  margin: 0; /* убрали внешние и внутренние отступы у списков для верстки */
+}
+p {
+  margin-top: 0px; /* убрали внешние отступы у заголовка для верстки */
+  margin-bottom: 0px; /* убрали внешние отступы у заголовка для верстки */
+}
+pre {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

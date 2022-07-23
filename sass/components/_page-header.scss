@@ -1,0 +1,117 @@
+.page-header {
+  border-bottom: 1px solid var(--header-line-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__site-nav {
+    display: flex;
+    align-items: center;
+  }
+  &__list-nav {
+    list-style: none;
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link-nav {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 20px;
+    padding-bottom: 33px;
+  }
+  &__link-nav:hover,
+  &__link-nav:focus {
+    color: var(--hover-focus-color);
+  }
+  /* подчеркивание активной страницки в навигации */
+
+  &__link-nav {
+    position: relative;
+  }
+
+  &__link-nav--active {
+    color: var(--hover-focus-color);
+  }
+
+  &__link-nav--active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--hover-focus-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    opacity: 1;
+  }
+
+  &__link-nav {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link-contact {
+    text-decoration: none;
+    color: var(--body-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 20px;
+    padding-bottom: 33px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link-contact:hover,
+  &__link-contact:focus {
+    color: var(--hover-focus-color);
+  }
+  &__list-contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+  }
+}
+
+.icon-email {
+  width: 16px;
+  height: 12px;
+  fill: var(--body-text-color);
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  fill: var(--body-text-color);
+  margin-right: 10px;
+}
+.icon-email,
+.icon-smartphone {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page-header__link-contact:hover .icon-email,
+.page-header__link-contact:focus .icon-email,
+.page-header__link-contact:hover .icon-smartphone,
+.page-header__link-contact:focus .icon-smartphone {
+  fill: var(--hover-focus-color);
+}

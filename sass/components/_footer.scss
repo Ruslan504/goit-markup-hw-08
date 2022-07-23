@@ -1,0 +1,37 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-footer-color);
+
+  &__container {
+    // display: flex;
+    // align-items: baseline;
+  }
+  &__adress {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__logo-position {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    line-height: 1.71;
+    color: var(--white-color);
+  }
+  &__link {
+    text-decoration: none;
+    line-height: 1.71;
+    display: inline-block;
+    margin-top: 9px;
+    color: var(--footer-link-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--hover-focus-color);
+  }
+}
