@@ -94,5 +94,25 @@
 <symbol id="icon-email-form-modal" xmlns="http://www.w3.org/2000/svg"><path d="M15 3H3c-.825 0-1.492.675-1.492 1.5l-.008 9c0 .825.675 1.5 1.5 1.5h12c.825 0 1.5-.675 1.5-1.5v-9c0-.825-.675-1.5-1.5-1.5Zm-.3 3.188L9.398 9.502a.759.759 0 0 1-.796 0L3.3 6.188a.637.637 0 1 1 .675-1.08L9 8.25l5.025-3.143a.637.637 0 1 1 .675 1.08Z"/></symbol>
 <symbol id="icon-person-form-modal" xmlns="http://www.w3.org/2000/svg"><path d="M9 9a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.003 0-6 1.005-6 3v.75c0 .412.337.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z" /></symbol>
 <symbol id="icon-phone-form-modal" xmlns="http://www.w3.org/2000/svg"><path d="m13.996 11.123-1.838-.21a1.44 1.44 0 0 0-1.187.412l-1.332 1.332a10.888 10.888 0 0 1-4.769-4.77L6.21 6.55a1.44 1.44 0 0 0 .412-1.187l-.21-1.824a1.448 1.448 0 0 0-1.44-1.28H3.72c-.818 0-1.498.68-1.448 1.497.384 6.18 5.327 11.116 11.5 11.5.817.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 0 0-1.274-1.432Z" /></symbol>
+
+<symbol id="icon-menu-burger"  xmlns="http://www.w3.org/2000/svg">
+<path  d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" fill="black"/>
+</symbol>
+
+<symbol id="icon-close-burger" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z" fill="#212121"/>
+</symbol>
+<symbol id="icon-menu-burger40x40" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" fill="black"/>
+</symbol>
+<symbol id="icon-close-burger40x40" xmlns="http://www.w3.org/2000/svg">
+<path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" fill="#212121"/>
+</symbol>
+
+
+
+
+
+
 </defs>
 </svg>

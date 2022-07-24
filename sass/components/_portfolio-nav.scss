@@ -1,11 +1,12 @@
 .portfolio-nav {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .portfolio-nav__list {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-wrap: wrap;
 }
 
 .portfolio-nav__item:not(:last-child) {
