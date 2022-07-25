@@ -1,4 +1,5 @@
 .join {
+  outline: 1px solid blue;
   width: 206px;
   margin-bottom: 60px;
   text-align: center;
@@ -51,4 +52,15 @@
 .join__social-block:hover .join__icons,
 .join__social-block:focus .join__icons {
   fill: var(--white-color);
+}
+
+@media screen and(min-width:768px) {
+  .join {
+    margin-right: 75px;
+    margin-left: auto;
+  }
+
+  .join__text {
+    text-transform: uppercase;
+  }
 }

@@ -8,6 +8,7 @@
   //   align-items: baseline;
   // }
   &__adress {
+    outline: 1px solid blue;
     text-align: center;
     margin-bottom: 60px;
   }
@@ -32,5 +33,17 @@
   &__link:hover,
   &__link:focus {
     color: var(--hover-focus-color);
+  }
+}
+
+@media screen and(min-width:768px) {
+  // .footer__container {
+  //   display: flex;
+  // }
+  .footer__adress-join-block {
+    display: flex;
+  }
+  .footer__adress {
+    margin-left: 60px;
   }
 }

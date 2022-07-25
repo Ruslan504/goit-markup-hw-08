@@ -98,3 +98,22 @@
 .team__social-link:focus .team__icon-linkedin {
   fill: var(--white-color);
 }
+
+@media screen and(min-width:768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team__item {
+    width: 354px;
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .team__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .team__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}

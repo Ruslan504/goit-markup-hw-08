@@ -1,5 +1,6 @@
 /* форма в футере */
 .footer-form {
+  outline: 1px solid blue;
   // display: flex;
 
   &__position {
@@ -69,5 +70,13 @@
     width: 24px;
     fill: var(--white-color);
     margin-left: 10px;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .footer-form {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

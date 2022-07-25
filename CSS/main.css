@@ -484,6 +484,28 @@ img {
   line-height: 1.71;
 }
 
+@media screen and (min-width: 768px) {
+  .spesials__item {
+    width: 354px;
+    outline: 1px solid blue;
+  }
+  .spesials__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .spesials__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .spesials__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .spesials__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .doing {
   display: none;
 }
@@ -532,6 +554,11 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .doing {
+    display: block;
+  }
+}
 .team {
   background-color: var(--background-team-color);
 }
@@ -651,6 +678,27 @@ img {
   fill: var(--white-color);
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team__item {
+    width: 354px;
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .team__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .team__item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
 .clients__title {
   font-size: 28px;
   line-height: 1.17;
@@ -765,12 +813,39 @@ img {
   fill: var(--blue-color);
 }
 
+@media screen and (min-width: 768px) {
+  .clients__block-link {
+    width: 226px;
+  }
+  .clients__item {
+    margin-right: 30px;
+  }
+  .clients__item:nth-child(1) {
+    margin-right: 30px;
+  }
+  .clients__item:nth-child(2) {
+    margin-right: 30px;
+  }
+  .clients__item:nth-child(3) {
+    margin-right: 0;
+  }
+  .clients__item:nth-child(4) {
+    margin-right: 30px;
+  }
+  .clients__item:nth-child(5) {
+    margin-right: 30px;
+  }
+  .clients__item:nth-child(6) {
+    margin-right: 0px;
+  }
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-footer-color);
 }
 .footer__adress {
+  outline: 1px solid blue;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -798,7 +873,18 @@ img {
   color: var(--hover-focus-color);
 }
 
+@media screen and (min-width: 768px) {
+  .footer__adress-join-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__adress {
+    margin-left: 60px;
+  }
+}
 .join {
+  outline: 1px solid blue;
   width: 206px;
   margin-bottom: 60px;
   text-align: center;
@@ -862,7 +948,19 @@ img {
   fill: var(--white-color);
 }
 
+@media screen and (min-width: 768px) {
+  .join {
+    margin-right: 75px;
+    margin-left: auto;
+  }
+  .join__text {
+    text-transform: uppercase;
+  }
+}
 /* форма в футере */
+.footer-form {
+  outline: 1px solid blue;
+}
 .footer-form__position {
   margin-left: 0;
 }
@@ -968,6 +1066,13 @@ img {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-form {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .portfolio-nav {
   margin-bottom: 40px;
 }
@@ -986,6 +1091,10 @@ img {
 
 .portfolio-nav__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.portfolio-nav__item:nth-child(-n+3) {
+  margin-bottom: 15px;
 }
 
 .portfolio-nav__button {
@@ -1031,7 +1140,7 @@ img {
 
 .portfolio__item {
   outline: 1px solid blue;
-  margin-bottom: 30px;
+  width: 450px;
   background: var(--portfolio-cards-background-color);
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
@@ -1049,12 +1158,8 @@ img {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio__item:nth-last-child(-n+3) {
-  margin-bottom: 0;
+.portfolio__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .portfolio__item:hover .portfolio__picture-up {
@@ -1127,6 +1232,17 @@ img {
   padding: 20px 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: 354px;
+  }
+  .portfolio__item:nth-child(1),
+.portfolio__item:nth-child(3),
+.portfolio__item:nth-child(5),
+.portfolio__item:nth-child(7) {
+    margin-right: 30px;
+  }
+}
 /* модалка */
 .backdrop {
   z-index: 20;
