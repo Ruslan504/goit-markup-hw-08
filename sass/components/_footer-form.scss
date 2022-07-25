@@ -80,3 +80,17 @@
     margin-right: auto;
   }
 }
+
+@media screen and(min-width:1200px) {
+  .footer-form {
+    display: flex;
+    width: 570px;
+  }
+  .footer-form__button {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  .footer-form__input-email {
+    width: 358px;
+  }
+}

@@ -117,3 +117,16 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and(min-width:1200px) {
+  .team__item {
+    width: 270px;
+  }
+  .team__item:nth-child(2) {
+    margin-right: 30px;
+  }
+  .team__item:nth-child(3),
+  .team__item:nth-child(4) {
+    margin-bottom: 30px;
+  }
+}

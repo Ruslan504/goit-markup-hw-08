@@ -93,3 +93,23 @@
     margin-right: 30px;
   }
 }
+
+@media screen and(min-width:1200px) {
+  .portfolio__item {
+    width: 370px;
+  }
+
+  .portfolio__item:nth-child(2),
+  .portfolio__item:nth-child(4),
+  .portfolio__item:nth-child(8) {
+    margin-right: 30px;
+  }
+  .portfolio__item:nth-child(9) {
+    margin-bottom: 30px;
+  }
+  .portfolio__item:nth-child(3),
+  .portfolio__item:nth-child(6),
+  .portfolio__item:nth-child(9) {
+    margin-right: 0px;
+  }
+}

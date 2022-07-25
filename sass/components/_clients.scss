@@ -126,7 +126,13 @@
   .clients__item:nth-child(6) {
     margin-right: 0px;
   }
-  // .clients__item:nth-last-child(-n + 2) {
-  //   margin-bottom: 0px;
-  // }
+}
+
+@media screen and(min-width:768px) {
+  .clients__block-link {
+    width: 170px;
+  }
+  .clients__item:nth-child(3) {
+    margin-right: 30px;
+  }
 }

@@ -50,3 +50,13 @@
     background-color: var(--button-hero-hover-color);
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__title {
+    font-size: 44px;
+  }
+}

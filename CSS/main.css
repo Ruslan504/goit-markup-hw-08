@@ -107,7 +107,6 @@ img {
   border-bottom: 1px solid var(--header-line-color);
   padding-top: 16px;
   padding-bottom: 16px;
-  /* подчеркивание активной страницки в навигации */
 }
 @media screen and (min-width: 767px) {
   .page-header {
@@ -279,7 +278,7 @@ img {
   fill: var(--hover-focus-color);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .btn-burger {
     display: none;
   }
@@ -349,6 +348,9 @@ img {
     margin-top: 10px;
   }
   .page-header__item-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -370,6 +372,40 @@ img {
     bottom: 0;
     left: 0;
     opacity: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .page-header__list-contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .page-header__item-contact:not(:last-child) {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  .page-header__link-contact--tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+  }
+  .page-header__link-contact--email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
   }
 }
 .logo {
@@ -440,6 +476,15 @@ img {
   background-color: var(--button-hero-hover-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__title {
+    font-size: 44px;
+  }
+}
 .spesials__list {
   list-style: none;
 }
@@ -504,6 +549,17 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .spesials__item {
+    width: 270px;
+  }
+  .spesials__item:nth-last-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .spesials__item:nth-child(2) {
+    margin-right: 30px;
   }
 }
 .doing {
@@ -699,6 +755,18 @@ img {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
+  .team__item:nth-child(2) {
+    margin-right: 30px;
+  }
+  .team__item:nth-child(3),
+.team__item:nth-child(4) {
+    margin-bottom: 30px;
+  }
+}
 .clients__title {
   font-size: 28px;
   line-height: 1.17;
@@ -839,6 +907,14 @@ img {
     margin-right: 0px;
   }
 }
+@media screen and (min-width: 768px) {
+  .clients__block-link {
+    width: 170px;
+  }
+  .clients__item:nth-child(3) {
+    margin-right: 30px;
+  }
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -881,6 +957,16 @@ img {
   }
   .footer__adress {
     margin-left: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__adress {
+    margin-right: 70px;
   }
 }
 .join {
@@ -1073,6 +1159,21 @@ img {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 570px;
+  }
+  .footer-form__button {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  .footer-form__input-email {
+    width: 358px;
+  }
+}
 .portfolio-nav {
   margin-bottom: 40px;
 }
@@ -1241,6 +1342,24 @@ img {
 .portfolio__item:nth-child(5),
 .portfolio__item:nth-child(7) {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: 370px;
+  }
+  .portfolio__item:nth-child(2),
+.portfolio__item:nth-child(4),
+.portfolio__item:nth-child(8) {
+    margin-right: 30px;
+  }
+  .portfolio__item:nth-child(9) {
+    margin-bottom: 30px;
+  }
+  .portfolio__item:nth-child(3),
+.portfolio__item:nth-child(6),
+.portfolio__item:nth-child(9) {
+    margin-right: 0px;
   }
 }
 /* модалка */

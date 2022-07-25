@@ -37,13 +37,19 @@
 }
 
 @media screen and(min-width:768px) {
-  // .footer__container {
-  //   display: flex;
-  // }
   .footer__adress-join-block {
     display: flex;
   }
   .footer__adress {
     margin-left: 60px;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .footer__container {
+    display: flex;
+  }
+  .footer__adress {
+    margin-right: 70px;
   }
 }
