@@ -83,7 +83,6 @@ img {
   width: 480px; /* посмотрели на размер сетки, обязательно считаем с крайними падингами 1170+15+15 */
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -99,7 +98,6 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  outline: 1px solid red;
 }
 
 @media screen and (max-width: 480px) {
@@ -247,14 +245,12 @@ img {
   padding-left: 40px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid blue;
   z-index: 2;
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   background-color: white;
-  outline: 1px solid red;
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -552,7 +548,6 @@ img {
 @media screen and (min-width: 768px) {
   .spesials__item {
     width: 354px;
-    outline: 1px solid blue;
   }
   .spesials__item:not(:last-child) {
     margin-right: 0;
@@ -660,7 +655,6 @@ img {
 }
 
 .team__item {
-  outline: 1px solid blue;
   padding-bottom: 24px;
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -946,7 +940,6 @@ img {
   background-color: var(--background-footer-color);
 }
 .footer__adress {
-  outline: 1px solid blue;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -995,7 +988,6 @@ img {
   }
 }
 .join {
-  outline: 1px solid blue;
   width: 206px;
   margin-bottom: 60px;
   text-align: center;
@@ -1069,9 +1061,6 @@ img {
   }
 }
 /* форма в футере */
-.footer-form {
-  outline: 1px solid blue;
-}
 .footer-form__position {
   margin-left: 0;
 }
@@ -1272,7 +1261,6 @@ img {
 }
 
 .portfolio__item {
-  outline: 1px solid blue;
   width: 450px;
   background: var(--portfolio-cards-background-color);
   -webkit-transition-property: -webkit-box-shadow;
@@ -1414,7 +1402,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   background-color: rgba(0, 0, 0, 0.2);
-  outline: 2px solid red;
   /* для анимации модалки все вешаем на бэкдроп */
   /* на is-hidden opacity: 0, поэтому вешаем 1 на бэкдроп*/
   opacity: 1;

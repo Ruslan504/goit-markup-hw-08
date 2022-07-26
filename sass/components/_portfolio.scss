@@ -5,11 +5,9 @@
 }
 
 .portfolio__item {
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
   width: 450px;
-  // margin-right: 30px;
 
-  // margin-bottom: 30px;
   background: var(--portfolio-cards-background-color);
 
   transition-property: box-shadow;

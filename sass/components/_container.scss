@@ -4,8 +4,7 @@
   width: 480px; /* посмотрели на размер сетки, обязательно считаем с крайними падингами 1170+15+15 */
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
-  // overflow: hidden;
+  // outline: 1px solid red;
 
   @media screen and (min-width: 768px) {
     width: 768px;
