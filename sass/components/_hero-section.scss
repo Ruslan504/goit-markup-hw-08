@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/background/people.jpg);
+    url(../img/background/Img.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -58,5 +58,14 @@
   }
   .hero__title {
     font-size: 44px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/background/Img@2x.jpg);
   }
 }

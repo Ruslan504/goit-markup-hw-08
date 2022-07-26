@@ -221,11 +221,15 @@
     font-size: 12px;
     color: #757575;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
   .page-header__link-contact--email {
     font-size: 12px;
     color: #757575;
     padding: 0;
+    display: flex;
+    align-items: center;
     // margin-bottom: 10px;
   }
   .page-header__item-contact:not(:last-child) {
@@ -274,13 +278,9 @@
     margin-left: 30px;
   }
   .page-header__link-contact--tel {
-    display: flex;
-    align-items: center;
     font-size: 14px;
   }
   .page-header__link-contact--email {
-    display: flex;
-    align-items: center;
     font-size: 14px;
   }
 }
