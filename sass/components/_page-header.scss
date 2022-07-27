@@ -7,10 +7,11 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
-  // &__container {
-  //   display: flex;
-  //   align-items: center;
-  // }
+  &__container {
+    position: relative;
+    //   display: flex;
+    //   align-items: center;
+  }
   &__site-nav {
     display: flex;
     align-items: center;
@@ -126,6 +127,8 @@
 // --------
 
 .menu-container {
+  // background-color: white;
+  // height: 100%;
   width: 100%;
   padding-left: 40px;
 

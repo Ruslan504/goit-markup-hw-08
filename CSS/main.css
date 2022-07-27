@@ -100,19 +100,10 @@ img {
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 480px) {
-  .section {
-    width: 480px;
-  }
-}
-@media (min-width: 768px) {
-  .section {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .section {
-    width: 1200px;
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 .page-header {
@@ -125,6 +116,9 @@ img {
   .page-header {
     position: static;
   }
+}
+.page-header__container {
+  position: relative;
 }
 .page-header__site-nav {
   display: -webkit-box;
@@ -546,6 +540,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .spesials__title {
+    text-align: left;
+  }
   .spesials__item {
     width: 354px;
   }
@@ -566,7 +563,10 @@ img {
         flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .spesials {
+    padding-bottom: 0;
+  }
   .spesials__item {
     width: 270px;
   }
@@ -637,10 +637,10 @@ img {
 .team__title {
   font-weight: 700;
   color: var(--black-color);
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team__list {
@@ -770,6 +770,10 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
   .team__item {
     width: 270px;
   }
@@ -933,6 +937,9 @@ img {
   .clients__item:nth-child(3) {
     margin-right: 30px;
   }
+  .clients__title {
+    font-size: 36px;
+  }
 }
 .footer {
   padding-top: 60px;
@@ -972,6 +979,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer__adress {
     margin-left: 60px;
@@ -982,9 +992,22 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer__adress {
+    outline: 1px solid red;
     margin-right: 70px;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: start;
+  }
+  .footer__log-.position {
+    display: inline-block;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 .join {
@@ -1058,6 +1081,11 @@ img {
   }
   .join__text {
     text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-bottom: 0px;
   }
 }
 /* форма в футере */
@@ -1424,8 +1452,8 @@ img {
 
 .modal {
   position: relative;
-  width: 528px;
-  min-height: 581px;
+  width: 452px;
+  min-height: 609px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
@@ -1646,7 +1674,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--body-text-color);
@@ -1657,7 +1685,7 @@ img {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--color-black);
+  border: 1px solid var(--color-black);
   border-radius: 4px;
   background-image: url(../img/sprite/original/check-form-modal.svg);
   background-size: contain;
@@ -1698,4 +1726,14 @@ img {
   line-height: 1.875px;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+  .modal-form__checkbox {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -35,6 +35,7 @@
 @media screen and(min-width:768px) {
   .footer__adress-join-block {
     display: flex;
+    align-items: baseline;
   }
   .footer__adress {
     margin-left: 60px;
@@ -44,8 +45,18 @@
 @media screen and(min-width:1200px) {
   .footer__container {
     display: flex;
+    align-items: baseline;
   }
   .footer__adress {
+    outline: 1px solid red;
     margin-right: 70px;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: start;
+  }
+
+  .footer__log-.position {
+    display: inline-block;
+    justify-content: flex-start;
   }
 }

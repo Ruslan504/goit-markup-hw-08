@@ -64,3 +64,9 @@
     text-transform: uppercase;
   }
 }
+
+@media screen and(min-width:1200px) {
+  .join {
+    margin-bottom: 0px;
+  }
+}

@@ -2,23 +2,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
   // outline: 1px solid red;
-  // width: 480px;
-}
-
-@media screen and(max-width:480px) {
-  .section {
-    width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .section {
-    width: 768px;
-  }
 }
 
 @media screen and(min-width:1200px) {
   .section {
-    width: 1200px;
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }

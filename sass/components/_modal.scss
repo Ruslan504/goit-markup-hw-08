@@ -32,8 +32,8 @@
 .modal {
   position: relative;
 
-  width: 528px;
-  min-height: 581px;
+  width: 452px;
+  min-height: 609px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
@@ -186,7 +186,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
@@ -200,7 +200,7 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--color-black);
+  border: 1px solid var(--color-black);
   border-radius: 4px;
   background-image: url(../img/sprite/original/check-form-modal.svg);
   background-size: contain;
@@ -236,4 +236,14 @@
   line-height: 1.875px;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+  .modal-form__checkbox {
+    font-size: 14px;
+  }
 }
