@@ -129,7 +129,8 @@
 .menu-container {
   // background-color: white;
   // height: 100%;
-  width: 100%;
+  // width: 796px;
+  height: 796px;
   padding-left: 40px;
 
   margin-left: auto;
@@ -264,6 +265,15 @@
     left: 0;
 
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .icon-smartphone {
+    display: none;
+  }
+  .icon-email {
+    display: none;
   }
 }
 
