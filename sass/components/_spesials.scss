@@ -74,9 +74,12 @@
     width: 270px;
   }
   .spesials__item:nth-last-child(-n + 2) {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   .spesials__item:nth-child(2) {
     margin-right: 30px;
+  }
+  .spesials__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }

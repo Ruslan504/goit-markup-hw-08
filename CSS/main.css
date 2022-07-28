@@ -133,7 +133,6 @@ img {
 }
 .page-header__list-nav {
   list-style: none;
-  margin-bottom: 300px;
 }
 .page-header__item {
   margin-left: 25px;
@@ -630,10 +629,13 @@ img {
     width: 270px;
   }
   .spesials__item:nth-last-child(-n+2) {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   .spesials__item:nth-child(2) {
     margin-right: 30px;
+  }
+  .spesials__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 .doing {
@@ -839,9 +841,11 @@ img {
   .team__item:nth-child(2) {
     margin-right: 30px;
   }
-  .team__item:nth-child(3),
+  .team__item:nth-child(1),
+.team__item:nth-child(2),
+.team__item:nth-child(3),
 .team__item:nth-child(4) {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 }
 .clients__title {
@@ -998,6 +1002,10 @@ img {
   }
   .clients__title {
     font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .clients__item {
+    margin-bottom: 0;
   }
 }
 .footer {
@@ -1145,6 +1153,9 @@ img {
   .join {
     margin-bottom: 0px;
   }
+  .join__text {
+    text-align: left;
+  }
 }
 /* форма в футере */
 .footer-form__position {
@@ -1272,6 +1283,9 @@ img {
   }
   .footer-form__input-email {
     width: 358px;
+  }
+  .footer-form__label-email {
+    text-align: left;
   }
 }
 .portfolio-nav {
@@ -1443,6 +1457,12 @@ img {
   .portfolio__item {
     width: 354px;
   }
+  .portfolio-nav {
+    margin-bottom: 30px;
+  }
+  .portfolio-nav__item:nth-child(-n+3) {
+    margin-bottom: 0px;
+  }
   .portfolio__item:nth-child(1),
 .portfolio__item:nth-child(3),
 .portfolio__item:nth-child(5),
@@ -1459,13 +1479,18 @@ img {
 .portfolio__item:nth-child(8) {
     margin-right: 30px;
   }
-  .portfolio__item:nth-child(9) {
-    margin-bottom: 30px;
+  .portfolio__item:nth-child(7),
+.portfolio__item:nth-child(8),
+.portfolio__item:nth-child(9) {
+    margin-bottom: 0px;
   }
   .portfolio__item:nth-child(3),
 .portfolio__item:nth-child(6),
 .portfolio__item:nth-child(9) {
     margin-right: 0px;
+  }
+  .portfolio-nav {
+    margin-bottom: 50px;
   }
 }
 /* модалка */
