@@ -27,7 +27,7 @@
             <span class="logo__text">Web</span>Studio</a
           >
 
-          <button type="button" class="btn-burger" data-menu-button>
+          <!-- <button type="button" class="btn-burger" data-menu-button>
             <svg
               width="40"
               height="40"
@@ -43,9 +43,96 @@
                 href="./img/sprite/icons.svg#icon-menu-burger40x40"
               ></use>
             </svg>
-          </button>
-          <div class="menu-container" data-menu>
+          </button> -->
+          <div class="menu-container container" data-menu>
             <ul class="page-header__list-nav">
+              <li class="page-header__item">
+                <a
+                  href="./index.html"
+                  class="page-header__link-nav "
+                  >Студия</a
+                >
+              </li>
+              <li class="page-header__item">
+                <a href="./portfolio.html" class="page-header__link-nav page-header__link-nav--active"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="page-header__item">
+                <a href="" class="page-header__link-nav">Контакты</a>
+              </li>
+            </ul>
+            <!-- contact -->
+            <ul class="page-header__list-contact">
+              <li class="page-header__item page-header__item-contact">
+                <a
+                  href="tel:+380961111111"
+                  class="page-header__link-contact page-header__link-contact--tel"
+                >
+                  <svg class="icon-smartphone">
+                    <use href="./img/sprite/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="page-header__item page-header__item-contact">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="page-header__link-contact page-header__link-contact--email"
+                >
+                  <svg class="icon-email">
+                    <use href="./img/sprite/icons.svg#icon-email"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="page-header__social">
+              <li class="page-header__social-item">
+                <a class="link page-header__social-link" href="#">Instagram</a>
+              </li>
+              <li class="page-header__social-item">
+                <a class="link page-header__social-link" href="#">Twitter</a>
+              </li>
+              <li class="page-header__social-item">
+                <a class="link page-header__social-link" href="#">Facebook</a>
+              </li>
+              <li class="page-header__social-item">
+                <a class="link page-header__social-link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <button type="button" class="btn-menu-open" data-mobile-menu-open>
+          <svg
+            width="40"
+            height="40"
+            aria-label="перкулючатель мобильного меню"
+            aria-expanded="false"
+          >
+            <use
+              class="icon-menu-burger"
+              href="./img/sprite/icons.svg#icon-menu-burger40x40"
+            ></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu is-hidden" data-mobile-menu>
+          <button type="button" class="btn-menu-close" data-mobile-menu-close>
+            <svg
+              width="40"
+              height="40"
+              aria-label="перкулючатель мобильного меню"
+              aria-expanded="false"
+            >
+              <use
+                class="icon-menu-close"
+                href="./img/sprite/icons.svg#icon-close-burger40x40"
+              ></use>
+            </svg>
+          </button>
+          <ul class="page-header__list-nav">
               <li class="page-header__item">
                 <a
                   href="./index.html"
@@ -455,8 +542,8 @@
         </form>
       </div>
     </footer>
-   
-    <script src="./js/button-menu.js"></script>
+   <script src="./js/mobile-menu-dima.js"></script>
+    <!-- <script src="./js/button-menu.js"></script> -->
 
     </div>
   </body>
