@@ -80,21 +80,22 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 480px; /* посмотрели на размер сетки, обязательно считаем с крайними падингами 1170+15+15 */
+  max-width: 480px; /* посмотрели на размер сетки, обязательно считаем с крайними падингами 1170+15+15 */
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
-
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -557,7 +558,7 @@ img {
   list-style: none;
 }
 .spesials__item {
-  width: 450px;
+  width: 100%;
 }
 .spesials__item:not(:last-child) {
   margin-right: 30px;
